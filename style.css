@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: ghostwhite;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+/* Header: Title and about */
+
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+}
+
+.header__logo h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.header__about h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.header__about p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Main: Photos and grid */
+
+.main__container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+}
+
+.main__container img {
+    width: 100%;
+}
+
+.main__container div {
+    position: relative;
+}
+
+.main__container p {
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 45px;
+    right: -60px;
+    height: 16px;
+    width: 102px;
+    
+}
+
+.main__container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+@media (min-width: 992px) {
+    .main__container div:nth-child(3n+2) {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .main__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px
+    }
+
+    .main__container div:nth-child(2n) {
+        margin-top: 60px;
+    }
+}
+
+
+/* Footer: created by */
+
+.footer__container {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+
+.footer__text a {
+    color: #A9A9A9;
+}
