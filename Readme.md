@@ -12,6 +12,11 @@ This is a challenge from the [DevChallenges.io](https://devchallenges.io/) in th
 - HTML5
 - SCSS
 
+## Screenshots
+
+![Mobile](./screenshots/mobile.png)
+![Desktop](./screenshots/desktop.png)
+
 ## Author
 
 Loved the Project!! 🤩
